@@ -237,6 +237,16 @@ class Program
 
     private static void Ex4()
     {
+        /*
+        Dê a codificação completa da classe Aluno, de acordo com o diagrama fornecido.
+
+        O método GetNotaFinal() deverá calcular e retornar a nota final do aluno, que consiste na média aritmética das três notas.
+        O método GetResultado() deverá retornar um string contendo o resultado final do aluno, de acordo com a seguinte tabela:
+        "Aprovado": nota final maior ou igual a 60 pontos.
+        "Recuperação": nota final entre 40 e 59 pontos, inclusive.
+        "Reprovado": nota inferior a 40 pontos. 
+        */
+
         Aluno aluno = new Aluno(12202509, "Ana Clara", 65, 40, 70);
         
         Console.WriteLine("Matrícula do aluno: " + aluno.GetMatricula());
@@ -246,6 +256,11 @@ class Program
     }
     private static void Ex5()
     {
+        /*
+        Escreva a classe TestaAluno que deverá permitir o cadastro de N alunos, onde N será informado pelo usuário (dica: use um vetor de objetos). 
+        Ao final, imprimir nome e resultado final dos N alunos.
+        */
+
         Console.WriteLine("Digite a quantidade de cadastros que deseja realizar: ");
         int N = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine();
@@ -285,6 +300,11 @@ class Program
 
     private static void Ex6()
     {
+        /*
+        Projete uma classe denominada Data que deverá armazenar dia, mês e ano como valores inteiros (não é permitido usar a classe DateTime ou similares). 
+        Crie o método construtor, os métodos get e set, e um método para retornar a data como string, no formato "dd/mm/aaaa". 
+        */
+
         Data data = new Data(29, 3, 2004);
         Console.WriteLine(data.retornarData());
     }
