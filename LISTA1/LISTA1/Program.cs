@@ -14,6 +14,7 @@ class Program
         Console.WriteLine("3. Atividade 3");
         Console.WriteLine("4. Atividade 4");
         Console.WriteLine("5. Atividade 5");
+        Console.WriteLine("6. Atividade 6");
 
         int opcao = int.Parse(Console.ReadLine());
 
@@ -33,6 +34,9 @@ class Program
                 break;
             case 5:
                 Ex5();
+                break;
+            case 6:
+                Ex6();
                 break;
             default:
                 Console.WriteLine("Opção inválida.");
@@ -277,6 +281,12 @@ class Program
             Console.WriteLine($"Resultado Final: {ArrayAlunos[i].getResultado()}");
             Console.WriteLine();
         }
+    }
+
+    private static void Ex6()
+    {
+        Data data = new Data(29, 3, 2004);
+        Console.WriteLine(data.retornarData());
     }
 }
 
