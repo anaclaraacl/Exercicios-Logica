@@ -15,6 +15,7 @@ class Program
         Console.WriteLine("4. Atividade 4");
         Console.WriteLine("5. Atividade 5");
         Console.WriteLine("6. Atividade 6");
+        Console.WriteLine("7. Atividade 7");
 
         int opcao = int.Parse(Console.ReadLine());
 
@@ -37,6 +38,9 @@ class Program
                 break;
             case 6:
                 Ex6();
+                break;
+            case 7:
+                Ex7();
                 break;
             default:
                 Console.WriteLine("Opção inválida.");
@@ -308,6 +312,15 @@ class Program
         Data data = new Data(29, 3, 2004);
         Console.WriteLine(data.retornarData());
     }
+    private static void Ex7() {
+
+        // Ex. para revisão de prova
+        Atleta aleta = new Atleta("Ana Clara", 1.56, 60.0);
+
+        Console.WriteLine("IMC do atleta: " + aleta.GetIMC());
+        Console.WriteLine(aleta.GetMensagem());
+    }
+
 }
 
 
